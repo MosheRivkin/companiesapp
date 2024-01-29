@@ -33,7 +33,7 @@ function App() {
         </div>
       </header>
       <main className="w-full flex flex-col gap-5 my-5 text-sm max-w-6xl mx-auto ">
-        {data ? (
+        {data && !err ? (
           data.map((company) => (
             <CompanyCard company={company} key={company.id} />
           ))
